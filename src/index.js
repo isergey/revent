@@ -1,8 +1,4 @@
-import EventEmitter from './EventEmitter.js';
+import EventEmitter from './EventEmitter';
 
-var exports = {
-  EventEmitter: EventEmitter
-};
-
-module.exports = exports;
+export {EventEmitter};
 

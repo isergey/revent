@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define(factory);
+	else {
+		var a = factory();
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -46,17 +56,17 @@
 
 	'use strict';
 	
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _EventEmitterJs = __webpack_require__(1);
+	var _EventEmitter = __webpack_require__(1);
 	
-	var _EventEmitterJs2 = _interopRequireDefault(_EventEmitterJs);
+	var _EventEmitter2 = _interopRequireDefault(_EventEmitter);
 	
-	var _exports = {
-	  EventEmitter: _EventEmitterJs2['default']
-	};
-	
-	module.exports = _exports;
+	exports.EventEmitter = _EventEmitter2['default'];
 
 /***/ },
 /* 1 */
@@ -131,5 +141,7 @@
 	module.exports = exports['default'];
 
 /***/ }
-/******/ ]);
+/******/ ])
+});
+;
 //# sourceMappingURL=revent.js.map
