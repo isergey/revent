@@ -4,5 +4,5 @@ var exports = {
   EventEmitter: EventEmitter
 };
 
-export default exports;
+export exports;
 
