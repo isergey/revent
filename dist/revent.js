@@ -46,10 +46,6 @@
 
 	'use strict';
 	
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
 	var _EventEmitterJs = __webpack_require__(1);
@@ -60,8 +56,7 @@
 	  EventEmitter: _EventEmitterJs2['default']
 	};
 	
-	exports['default'] = _exports;
-	module.exports = exports['default'];
+	module.exports = _exports;
 
 /***/ },
 /* 1 */
