@@ -79,9 +79,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	});
 	var EventEmitter = function EventEmitter() {
 	  var events = {};
-	  var self = undefined;
+	  var self = this;
 	
-	  undefined.trigger = function (eventName, data) {
+	  this.trigger = function (eventName, data) {
 	
 	    var callbacks = events[eventName];
 	    var i;
@@ -94,7 +94,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return self;
 	  };
 	
-	  undefined.on = function (eventName, callback) {
+	  this.on = function (eventName, callback) {
 	
 	    var callbacks = events[eventName];
 	    if (typeof callbacks === 'undefined') {
@@ -105,7 +105,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return self;
 	  };
 	
-	  undefined.off = function (eventName, callback) {
+	  this.off = function (eventName, callback) {
 	
 	    if (typeof eventName === 'undefined') {
 	      events = {};
@@ -132,7 +132,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return self;
 	  };
 	
-	  undefined.getEvents = function () {
+	  this.getEvents = function () {
 	    return events;
 	  };
 	};

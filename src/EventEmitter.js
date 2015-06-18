@@ -1,4 +1,4 @@
-const EventEmitter = () => {
+const EventEmitter = function() {
   var events = {};
   var self = this;
 
